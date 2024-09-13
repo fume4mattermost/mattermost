@@ -30,7 +30,7 @@ export function getPermalinkURL(state: GlobalState, teamId: Team['id'], postId: 
     if (!team) {
         team = getCurrentTeam(state);
     }
-    return `${getTeamRelativeUrl(team)}/pl/${postId}`;
+    return `/_redirect/pl/${postId}`;
 }
 
 export function getChannelURL(state: GlobalState, channel: Channel, teamId: string): string {
